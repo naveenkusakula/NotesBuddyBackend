@@ -33,7 +33,7 @@ public class UploadAndDownloadNotes {
 	@Autowired
 	uploadImageFile uploadFile;
 
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "*")
 	@RequestMapping(value = "/notes/upload", method = RequestMethod.POST)
 	public ResponseEntity<Notes> upload(@RequestBody Notes note) {
 
@@ -46,7 +46,7 @@ public class UploadAndDownloadNotes {
 
 	}
 
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "*")
 	@RequestMapping(value = "/notes/download/{id}", method = RequestMethod.GET)
 	public ResponseEntity<Object> download(@PathVariable Long id) throws IOException {
 		Notes note = notesService.getNotes(id);
@@ -75,7 +75,7 @@ public class UploadAndDownloadNotes {
 
 	}
 
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "*")
 	@RequestMapping(value = "/notes/savenotes", method = RequestMethod.POST)
 	public ResponseEntity<Notes> savenotes(@RequestParam("file") MultipartFile file) {
 		Notes savedNotes = uploadFile.saveFile(file);
