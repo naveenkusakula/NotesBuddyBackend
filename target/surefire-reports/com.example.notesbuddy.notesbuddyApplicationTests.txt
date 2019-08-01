@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.example.notesbuddy.notesbuddyApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.931 s <<< FAILURE! - in com.example.notesbuddy.notesbuddyApplicationTests
+contextLoads(com.example.notesbuddy.notesbuddyApplicationTests)  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through method 'userLogin' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.notesbuddy.model.User' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.web.bind.annotation.RequestBody(required=true)}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.notesbuddy.model.User' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.web.bind.annotation.RequestBody(required=true)}
+

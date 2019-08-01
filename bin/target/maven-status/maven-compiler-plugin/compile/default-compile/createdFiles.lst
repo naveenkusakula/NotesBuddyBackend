@@ -1,0 +1,5 @@
+com/example/notesbuddy/services/uploadNotesService.class
+com/example/notesbuddy/repositories/INotesRepository.class
+com/example/notesbuddy/notesbuddyApplication.class
+com/example/notesbuddy/controller/uploadNotes.class
+com/example/notesbuddy/model/notes.class
